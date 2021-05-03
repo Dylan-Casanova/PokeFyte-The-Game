@@ -20,14 +20,14 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    pokemon_id: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        references: {
-            model: 'pokemon',
-            key: 'id',
-          },
-      },
+    // pokemon_id: {
+    //     type: DataTypes.INTEGER,
+    //     allowNull: false,
+    //     references: {
+    //         model: 'pokemon',
+    //         key: 'id',
+    //       },
+    //   },
     email: {
       type: DataTypes.STRING,
       allowNull: false,
