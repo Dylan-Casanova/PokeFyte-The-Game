@@ -22,7 +22,6 @@ header {
 header h1 {
     font-size: 3rem;
     color: black;
-    background-image: url("/images/pokefyte-logo.png");
     background-color: white;
     width: 20%;
     padding: 10px;
