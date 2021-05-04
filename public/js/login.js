@@ -32,29 +32,13 @@ const password = document.querySelector('#password-signup').value.trim();
         body: JSON.stringify({ username, email, password }),
         headers: { 'Content-Type': 'application/json' },
       });
-<<<<<<< HEAD
-  
-=======
     
->>>>>>> ad5bddb0941e5d121e8f69ba31c58f58f67dad60
       if (response.ok) {
         document.location.replace('/');
       } else {
         alert('Failed to sign up.');
       }
     }
-<<<<<<< HEAD
-  };
-  
-  document
-    .querySelector('.login-form')
-    .addEventListener('submit', loginFormHandler);
-  
-  document
-    .querySelector('.signup-form')
-    .addEventListener('submit', signupFormHandler);
-  
-=======
 };
     
 document
@@ -64,4 +48,3 @@ document
 document
     .querySelector('.signup-form')
     .addEventListener('submit', signupFormHandler);
->>>>>>> ad5bddb0941e5d121e8f69ba31c58f58f67dad60
