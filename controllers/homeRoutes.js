@@ -37,7 +37,14 @@ router.get('/dashboard', withAuth, async (req, res) => {
             return axios.get(item.url)
         }))
         const pokemon = pokes.map(item => {
-            return { name: item.data.forms[0].name, image: item.data.sprites.front_default }
+            return { 
+                name: item.data.forms[0].name, 
+                image: item.data.sprites.front_default,
+                hp: item.data.stats[0].base_stat,
+                attack: item.data.stats[1].base_stat,
+                move1: item.data.moves[0].move.name,
+                move2: item.data.moves[1].move.name
+            }
         })
 
         console.log(pokemon)
