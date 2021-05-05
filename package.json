@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Dylan-Casanova/PokeFyte-The-Game#readme",
   "dependencies": {
+    "axios": "^0.21.1",
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.1",
     "dotenv": "^8.2.0",
@@ -26,9 +27,9 @@
     "express-handlebars": "^5.3.0",
     "express-session": "^1.17.1",
     "handlebars": "^4.7.7",
+    "mysql2": "^2.2.5",
     "path": "^0.12.7",
     "sequelize": "^6.6.2",
-    "mysql2": "^2.2.5",
     "session": "^0.1.0",
     "socket.io": "^4.0.1"
   }
