@@ -12,11 +12,14 @@
 
 <p align='center'>Hello! This is PokéFyte - an application that allows users to battle other users online with their Pokémon! 
 <br>
-<p align='center'>Users are able to sign up and login, as well as set their Pokémon to be used for battles.
-<p align='center'>Then, users can create a room or join an existing room to battle in, if they have the Room ID.
+<p align='center'>Users are able to sign up and login, as well as view the Pokédex!
+<p align='center'>Currently the Pokédex displays ~15 Pokémon.
 </p>
-<p align='center'>Users are also able to view their collection of Pokémon on their profile.
+<p align='center'>The Pokédex will provide information such as Pokémon names, HP, Attack Stat, Type and Moves!
+<p align='center'>Users can also create a room or join an existing room to battle in, if they have the Room ID.
 </p>
+
+
 
 
 <br>
