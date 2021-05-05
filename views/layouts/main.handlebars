@@ -5,7 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pokefyte</title>
-  <link rel="stylesheet" type="text/css" href="/css/jass.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+ 
+  {{!-- <link rel="stylesheet" type="text/css" href="/css/jass.css"> --}}
   <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
@@ -27,6 +29,19 @@
         <h2>Enjoy this great adventure!</h2>
     </aside>
     <div class="posts">
+    {{!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../images/field2.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../images/field4.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../images/field3.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div> --}}
       {{{body}}}
     </div>
   </main>
@@ -35,6 +50,7 @@
   {{#if loggedIn}}
   <script src="/js/logout.js"></script>
   {{/if}}
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 </body>
 
