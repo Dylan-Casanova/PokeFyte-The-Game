@@ -62,8 +62,6 @@ router.get('/dashboard', withAuth, async (req, res) => {
 
         const nthPokes = everyNth(pokeData.data.results, 3).concat(pokeData.data.results[24])
 
-        const nthPokes = everyNth(pokeData.data.results, 3)
-
         const pokes = await Promise.all(nthPokes.map(item => {
             return axios.get(item.url)
         }))
