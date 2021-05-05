@@ -3,9 +3,9 @@ const { User } = require('../models');
 const userdata = [
 
 {
-    "username": "Lucas523",
-    "email": "sal@hotmail.com",
-    "password": "password12345",
+    "username": 'Lucas523',
+    "email": 'sal@hotmail.com',
+    "password": 'password12345'
     // "pokemon_id": 1,
   },
   {

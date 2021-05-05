@@ -1,0 +1,14 @@
+
+{{#if pokemons.length}}
+<section>
+  <h2>Your Pokemon</h2>
+    {{#each pokemons as |pokemon|}}
+      {{> dashboard-postinfo pokemon}}
+    {{/each}}
+
+</section>
+{{/if}}
+
+<button type="submit" class="btn"><a class="link" href="/dashboard/new">+ New Pokemon</a></button>
+
+{{!-- <script src="/javascript/add-post.js"></script> --}}

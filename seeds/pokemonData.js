@@ -10,6 +10,7 @@ const pokemondata = [
     front_default: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png',
     back_default: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png',
     health_points: 45,
+    user_id: 1
   },
   {
     name: 'Charmeleon',
@@ -20,6 +21,7 @@ const pokemondata = [
     front_default: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png',
     back_default: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/5.png',
     health_points: 58,
+    user_id: 2
   },
   {
     name: 'Squirtle',
@@ -30,6 +32,7 @@ const pokemondata = [
     front_default: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png',
     back_default: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/7.png',
     health_points: 44,
+    user_id: 3
   },
   {
     name: 'Caterpie',
@@ -40,6 +43,7 @@ const pokemondata = [
     front_default: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png',
     back_default: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/10.png',
     health_points: 45,
+    user_id: 4
   },
   {
     name: 'Beedrill',
@@ -50,6 +54,7 @@ const pokemondata = [
     front_default: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png',
     back_default: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/15.png',
     health_points: 65,
+    user_id: 5
   },
 ];
 
