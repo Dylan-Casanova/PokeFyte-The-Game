@@ -59,7 +59,11 @@ router.get('/dashboard', withAuth, async (req, res) => {
     try {
         const everyNth = (arr, nth) => arr.filter((e, i) => i % nth === nth - 1)
         const pokeData = await axios.get("https://pokeapi.co/api/v2/pokemon?limit=45&offset=0")
+
+        const nthPokes = everyNth(pokeData.data.results, 3).concat(pokeData.data.results[24])
+
         const nthPokes = everyNth(pokeData.data.results, 3)
+
         const pokes = await Promise.all(nthPokes.map(item => {
             return axios.get(item.url)
         }))
@@ -75,7 +79,7 @@ router.get('/dashboard', withAuth, async (req, res) => {
             }
         })
 
-        console.log(pokemon)
+        // console.log(pokemon)
 
             res.render('cards',
             {pokemon});
