@@ -32,8 +32,10 @@ router.get('/', async (req, res) => {
 
 router.get('/dashboard', withAuth, async (req, res) => {
     try {
-        const pokeData = await axios.get("https://pokeapi.co/api/v2/pokemon?limit=15&offset=0")
-        const pokes = await Promise.all(pokeData.data.results.map(item => {
+        const everyNth = (arr, nth) => arr.filter((e, i) => i % nth === nth - 1)
+        const pokeData = await axios.get("https://pokeapi.co/api/v2/pokemon?limit=45&offset=0")
+        const nthPokes = everyNth(pokeData.data.results, 3)
+        const pokes = await Promise.all(nthPokes.map(item => {
             return axios.get(item.url)
         }))
         const pokemon = pokes.map(item => {
@@ -43,7 +45,8 @@ router.get('/dashboard', withAuth, async (req, res) => {
                 hp: item.data.stats[0].base_stat,
                 attack: item.data.stats[1].base_stat,
                 move1: item.data.moves[0].move.name,
-                move2: item.data.moves[1].move.name
+                move2: item.data.moves[1].move.name,
+                type: item.data.types[0].type.name
             }
         })
 
