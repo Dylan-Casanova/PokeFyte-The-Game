@@ -1,18 +1,15 @@
 const sequelize = require('../config/connection');
-const seedUsers = require('./userData');
 const seedPokemon = require('./pokemonData');
-
-
+const seedUser = require('./userData');
 
 const seedAll = async () => {
-    await sequelize.sync({ force: true });
-  
-    await seedUsers();
-  
-    await seedPokemon();
-  
-    process.exit(0);
-  };
-  
-  seedAll();
-  
+  await sequelize.sync({ force: true });
+
+  await seedPokemon();
+
+  await seedUser();
+
+  process.exit(0);
+};
+
+seedAll();

@@ -21,38 +21,41 @@ router.post('/', async (req, res) => {
   }
 });
 
-
 // Login
 router.post('/login', async (req, res) => {
   try {
-    const dbuserData = await User.findOne({ where: { email: req.body.email } });
-    console.log(req.body.email);
-// body from client or database
-    if (!dbuserData) {
+    const dbUserData = await User.findOne({
+      where: {
+        email: req.body.email,
+      },
+    });
+
+    if (!dbUserData) {
       res
         .status(400)
-        .json({ message: 'Incorrect email or password, please try again' });
+        .json({ message: 'Incorrect email or password. Please try again!' });
       return;
     }
 
-    const validPassword = await dbuserData.checkPassword(req.body.password);
+    const validPassword = await dbUserData.checkPassword(req.body.password);
 
     if (!validPassword) {
       res
         .status(400)
-        .json({ message: 'Incorrect email or password, please try again' });
+        .json({ message: 'Incorrect email or password. Please try again!' });
       return;
     }
 
     req.session.save(() => {
-      req.session.user_id = dbuserData.id;
-      req.session.logged_in = true;
-      
-      res.json({ user: dbuserData, message: 'You are now logged in!' });
-    });
+      req.session.loggedIn = true;
 
+      res
+        .status(200)
+        .json({ user: dbUserData, message: 'You are now logged in!' });
+    });
   } catch (err) {
-    res.status(400).json(err);
+    console.log(err);
+    res.status(500).json(err);
   }
 });
 
