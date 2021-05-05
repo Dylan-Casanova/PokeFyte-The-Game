@@ -13,7 +13,7 @@
 <body>
   <nav>
     <a href="/">Home</a>
-    <a href="/dashboard">Dashboard</a>
+    <a href="/dashboard">Pokédex</a>
     {{#if loggedIn}}
     <button id="logout" class="btn-no-style">Logout</button>
     {{else}}
@@ -21,11 +21,12 @@
     {{/if}}
   </nav>
   <header>
-    <h1><img src="https://fontmeme.com/permalink/210504/11e21adbbf4cc1626f181a3f441c2837.png" alt="PokeFyteLogo" border="0"></h1>
+    <h1><img src="https://fontmeme.com/permalink/210504/11e21adbbf4cc1626f181a3f441c2837.png" alt="PokeFyteLogo" border="0"/></h1>
   </header>
   <main>
     <aside>
         <h2>Enjoy this great adventure!</h2>
+        <img src='https://veekun.com/dex/media/pokemon/global-link/64.png'/>
     </aside>
     <div class="posts">
       {{{body}}}
