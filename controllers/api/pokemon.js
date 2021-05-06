@@ -117,7 +117,7 @@ router.get('/characters', async (req, res) => {
                 }
             },
             {
-                name: item.data.moves[3].move.name,
+                name: item.data.moves[17].move.name,
                 hp: randomNum(160, 130),
                 avail: {
                 total: 2,
