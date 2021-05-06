@@ -619,8 +619,7 @@ function attackEnemy(that, callback){
       // Enemy is dead
 
       clearModal();
-    $('.modal-in header').append('<h1>You Enemy is slain</h1><span class="close">x</span>');
-    $('.modal-in section').append('<p>Congratulations! Dare you try again?');
+    $('.modal-in header').append('<h1>You Won!</h1><span class="close">x</span>');
     $('.modal-out').slideDown('400');
       modalControls();
 
@@ -717,8 +716,7 @@ function defend(that){
     // ding dong the hero's dead
 
     clearModal();
-    $('.modal-in header').append('<h1>Your Hero has died</h1><span class="close">x</span>');
-    $('.modal-in section').append('<p>You lose, good day!');
+    $('.modal-in header').append('<h1>You Lost! Good day</h1><span class="close">x</span>');
     $('.modal-out').slideDown('400');
     modalControls()
 
