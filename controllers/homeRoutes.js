@@ -77,7 +77,7 @@ router.get('/dashboard', withAuth, async (req, res) => {
             }
         })
 
-        // console.log(pokemon)
+        console.log(pokemon)
 
             res.render('cards',
             {pokemon});

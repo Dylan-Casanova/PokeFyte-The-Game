@@ -89,6 +89,11 @@ img {
     height: auto;
 }
 
+.card-img, .card-img-top {
+    max-width: 100%;
+    height: auto;
+}
+
 .post {
     background-color: #707070;
     margin-bottom: 2%;
