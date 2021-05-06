@@ -3,7 +3,7 @@ const Pokemon = require('./Pokemon');
 
 
 Pokemon.belongsTo(User, {
-    foreignKey: 'pokemon_id',
+    foreignKey: 'user_id',
   });
 
 
