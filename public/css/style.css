@@ -82,7 +82,9 @@ nav a:hover {
 }
   
 img {
-    max-width: 100%;
+    max-width: 50%;
+    max-height: 20rem;
+    margin-bottom: 13px;
     height: auto;
 }
 
@@ -181,8 +183,7 @@ footer {
     border: solid#707070;
     background-color: #2b2b2b;
     color: white;
-    margin-bottom: 15%;
-    margin-top: 15%;
+
 }
 
 #backGround{
