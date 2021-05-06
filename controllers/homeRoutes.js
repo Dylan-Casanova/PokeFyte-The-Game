@@ -2,8 +2,11 @@ const router = require('express').Router();
 const { default: axios } = require('axios');
 const { response } = require('express');
 const { Pokemon } = require('../models');
+<<<<<<< Updated upstream
 const withAuth = require('../util/auth');
 
+=======
+>>>>>>> Stashed changes
 //get all pokemons for home page
 router.get('/', async (req, res) => {
     try {
@@ -29,7 +32,11 @@ router.get('/', async (req, res) => {
       res.status(500).json(err);
     }
 });
+<<<<<<< Updated upstream
 router.get('/dashboard2', async (req, res) => {
+=======
+router.get('/dashboard', async (req, res) => {
+>>>>>>> Stashed changes
     try {
         const dbPokemonData = await Pokemon.findAll({
             attributes: [
@@ -46,7 +53,10 @@ router.get('/dashboard2', async (req, res) => {
         // pass a single post object into the homepage template
         res.render('cards', { 
             pokemons,
+<<<<<<< Updated upstream
             type: item.data.types[0].type.name,
+=======
+>>>>>>> Stashed changes
             loggedIn: req.session.loggedIn 
         });
     } catch (err) {
