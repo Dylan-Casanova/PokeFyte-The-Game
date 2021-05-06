@@ -88,11 +88,29 @@ img {
     height: auto;
 }
 
+<<<<<<< HEAD
 .card-img, .card-img-top {
     max-width: 100%;
     height: auto;
 }
 
+=======
+.card-img-top {
+    max-width: 100%;
+    max-height: 20rem;
+    margin-bottom: 13px;
+    height: auto;
+}
+
+.logo {
+    max-width: 100%;
+    max-height: 20rem;
+    margin-bottom: 13px;
+    height: auto;
+
+}
+
+>>>>>>> 41a3c00b6ea013efcce7f90547281c1dc1edd4b8
 .post {
     background-color: #707070;
     margin-bottom: 2%;
