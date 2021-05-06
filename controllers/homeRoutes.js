@@ -2,6 +2,8 @@ const router = require('express').Router();
 const { default: axios } = require('axios');
 const { response } = require('express');
 const { Pokemon } = require('../models');
+const withAuth = require('../util/auth');
+
 //get all pokemons for home page
 router.get('/', async (req, res) => {
     try {
@@ -27,33 +29,7 @@ router.get('/', async (req, res) => {
       res.status(500).json(err);
     }
 });
-router.get('/dashboard', async (req, res) => {
-    try {
-        const dbPokemonData = await Pokemon.findAll({
-            attributes: [
-                'id',
-                'name',
-                "front_default",
-                'user_id'      
-            ],
-        });
-  
-        const pokemons = dbPokemonData.map((pokemon) =>
-            pokemon.get({ plain: true })
-        );
-        // pass a single post object into the homepage template
-        res.render('cards', { 
-            pokemons,
-            loggedIn: req.session.loggedIn 
-        });
-    } catch (err) {
-      console.log(err);
-      res.status(500).json(err);
-    }
-});
-
-router.get('/dashboard', async (req, res) => {
-
+router.get('/dashboard2', async (req, res) => {
     try {
         const dbPokemonData = await Pokemon.findAll({
             attributes: [
