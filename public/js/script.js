@@ -455,7 +455,7 @@ async function resetGame(){
   $('.attack-list li').unbind('click');
   $('.attack-list').empty();
   $('.stadium .enemy').css({'padding':'0'});
-  $('.instructions p').text('Choose your hero');
+  $('.instructions p').text('Choose your Pokémon');
 
   // set & start the opening game music
   // $('audio.music').attr('src',music["opening"]);
@@ -467,7 +467,7 @@ async function resetGame(){
 
   for(var i in characters){
     // build the character list
-    $(".characters").append('<div class="char-container"><img src="'+characters[i].img.default+'" alt="'+characters[i].name+'"><h2>'+characters[i].name+'</h2><span class="type '+characters[i].type+'"></span></div>')
+    $(".characters").append('<div class="char-container card" style="display:flex; flex-wrap:wrap; flex-direction: row;"><img src="'+characters[i].img.default+'" alt="'+characters[i].name+'"><h2>'+characters[i].name+'</h2><span class="type '+characters[i].type+'"></span></div>')
   }
   characterChoice();
 }
@@ -619,8 +619,7 @@ function attackEnemy(that, callback){
       // Enemy is dead
 
       clearModal();
-    $('.modal-in header').append('<h1>You Enemy is slain</h1><span class="close">x</span>');
-    $('.modal-in section').append('<p>Congratulations! Dare you try again?');
+    $('.modal-in header').append('<h1>You Won!</h1><span class="close">x</span>');
     $('.modal-out').slideDown('400');
       modalControls();
 
@@ -717,8 +716,7 @@ function defend(that){
     // ding dong the hero's dead
 
     clearModal();
-    $('.modal-in header').append('<h1>Your Hero has died</h1><span class="close">x</span>');
-    $('.modal-in section').append('<p>You lose, good day!');
+    $('.modal-in header').append('<h1>You Lost! Good day</h1><span class="close">x</span>');
     $('.modal-out').slideDown('400');
     modalControls()
 

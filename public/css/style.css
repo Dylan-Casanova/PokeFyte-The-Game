@@ -8,6 +8,14 @@ body {
     background-color: #222224;
 }
 
+#login div {
+    column-gap: 50px;
+}
+
+footer p {
+    color: #f0f0f0;
+}
+
 header {
     border-bottom: 15px solid #ee1515;
     height: 200px;
@@ -52,9 +60,9 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: #f0f0f0;
     padding: 14px 20px;
-    text-decoration: none;
+    text-decoration: underline;
 }
   
 nav a:hover {
@@ -79,6 +87,10 @@ nav a:hover {
     font-size: 100%;
     transition: color 0.1s;
     margin-left: 16px;
+}
+
+.btn-danger {
+    border-radius: 30px;
 }
   
 img {
@@ -144,15 +156,14 @@ img {
   
 .login-card {
     margin: 0 0 20px 0;
+    border-spacing: 5px;
     flex: 0 0 50%;
     max-width: 50%;
     padding: 5px;
-    border: 3px solid black;
-    border-radius: 20px;
+    border: 5px solid black;
+    border-radius: 30px;
     border-style: double;
-    border-width: thick;
-    background-color: #2b2b2b;
-    color: #707070;
+    color: black;
 }
   
 .card header {
@@ -205,4 +216,14 @@ footer {
     background-image:url(https://assets.pokemon.com//assets/cms2/img/misc/virtual-backgrounds/sword-shield/pokemon-in-the-wild.png);
     background-repeat: no-repeat;
     background-size: cover;
+<<<<<<< HEAD
 }
+=======
+}
+
+#loginform {
+    background-image:url(https://i.pinimg.com/originals/2c/dd/4d/2cdd4def3fcd3935b0eafe7ca4269cc9.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+>>>>>>> 51f1b3e209089cbec46f18458559e7b43493781f
