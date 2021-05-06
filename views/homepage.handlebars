@@ -1,20 +1,32 @@
 {{#if loggedIn}}
-<div class="menu">
-	<h1>PokeFyte</h1>
-	<h3>How To Play</h3>
-	<ol>
-		<li>Player 1 Create a new Battle by entering your username</li>
-		<li>Player 2 Enter another username and the room id that is displayed on host's window.</li>
-		<li>Click on join Battle. </li>
-	</ol>
-	<h4>Create a new Battle</h4>
-	<input type="text" name="name" id="nameNew" placeholder="Enter your username" required>
-	<button id="new">New Battle</button>
-	<br><br>
-	<h4>Join an existing Battle</h4>
-	<input type="text" name="name" id="nameJoin" placeholder="Enter your username" required>
-	<input type="text" name="room" id="room" placeholder="Enter Battle ID" required>
-	<button id="join">Join Battle</button>
+<main>
+  <div class="instructions">
+    <p>Choose your hero</p>
+  </div>
+  
+  <section class="characters"></section>
+  
+  <section class="stadium">
+    <section class="enemy"></section>
+    <section class="hero"></section>
+  </section>
+  
+  
+  <ul class="attack-list"></ul>
+</main>
+
+
+<div class="audio">
+  <audio class="sfx"></audio>
+  <audio class="music" loop></audio>
+</div>
+
+<div class="modal-out">
+  <div class="modal-in">
+    <header></header>
+    <section></section>
+    <footer></footer>
+  </div>
 </div>
 {{else}}
 <a href="/login">Login</a>
