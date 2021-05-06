@@ -10,14 +10,13 @@
 
 <h1 align='center'><img src='https://veekun.com/dex/media/pokemon/global-link/8.png' height=40px/> Description <img src='https://veekun.com/dex/media/pokemon/global-link/123.png' height=40px/></h1>
 
-<p align='center'>Hello! This is PokéFyte - an application that allows users to battle other users online with their Pokémon! 
+<p align='center'>Hello! This is PokéFyte - an application that allows users to engage in battle with Pokémon! 
 <br>
 <p align='center'>Users are able to sign up and login, as well as view the Pokédex!
-<p align='center'>Currently the Pokédex displays ~15 Pokémon.
+<p align='center'>While in development, the amount of Pokémon that display in the Pokédex will vary.
 </p>
 <p align='center'>The Pokédex will provide information such as Pokémon names, HP, Attack Stat, Type and Moves!
-<p align='center'>Users can also create a room or join an existing room to battle in, if they have the Room ID.
-</p>
+
 
 
 
@@ -43,8 +42,10 @@ REMINDER - Update and rename .env file with MySQL information such as username, 
 
 <br>
 
-<h1 align='center'><img src='https://veekun.com/dex/media/pokemon/global-link/43.png' height=40px/> Technology <img src='https://veekun.com/dex/media/pokemon/global-link/21.png' height=40px/></h1>
-<p align='center'>This application utilizes <a href="https://pokeapi.co/">PokeAPI</a> and <a href="https://socket.io/">socket.io.</a>
+<h1 align='center'><img src='https://veekun.com/dex/media/pokemon/global-link/43.png' height=40px/> API/Dependencies <img src='https://veekun.com/dex/media/pokemon/global-link/21.png' height=40px/></h1>
+<p align='center'>This application utilizes <a href="https://pokeapi.co/">PokeAPI</a> to provide all Pokémon data.
+<br>
+A few of the dependencies used were <a href="https://handlebarsjs.com/">handlebars</a>, <a href="https://www.npmjs.com/package/axios">axios</a>, <a href="https://www.npmjs.com/package/mysql2">MySQL2</a>, and <a href="https://sequelize.org/">Sequelize</a>.
 </p>
 
 <br>
