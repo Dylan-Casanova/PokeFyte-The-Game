@@ -455,7 +455,7 @@ async function resetGame(){
   $('.attack-list li').unbind('click');
   $('.attack-list').empty();
   $('.stadium .enemy').css({'padding':'0'});
-  $('.instructions p').text('Choose your hero');
+  $('.instructions p').text('Choose your Pokémon');
 
   // set & start the opening game music
   // $('audio.music').attr('src',music["opening"]);
@@ -467,7 +467,7 @@ async function resetGame(){
 
   for(var i in characters){
     // build the character list
-    $(".characters").append('<div class="char-container"><img src="'+characters[i].img.default+'" alt="'+characters[i].name+'"><h2>'+characters[i].name+'</h2><span class="type '+characters[i].type+'"></span></div>')
+    $(".characters").append('<div class="char-container card" style="display:flex; flex-wrap:wrap; flex-direction: row;"><img src="'+characters[i].img.default+'" alt="'+characters[i].name+'"><h2>'+characters[i].name+'</h2><span class="type '+characters[i].type+'"></span></div>')
   }
   characterChoice();
 }
