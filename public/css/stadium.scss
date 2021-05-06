@@ -1,0 +1,233 @@
+body{
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+    font-size: 16px;
+    padding-top: 30px;
+  }
+  
+  header{
+    text-align: center;
+    img{
+      max-height: 100px;
+      cursor: pointer;
+    }
+  }
+  
+  strong{
+    font-weight: 600;
+    line-height: 1.5em;
+  }
+  
+  
+  .type{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    background-image: url('http://orig15.deviantart.net/24d8/f/2011/057/3/5/ge___energy_type_icons_by_aschefield101-d3agp02.png');
+    background-repeat: no-repeat;
+    background-size: 500% 400%;
+    &.electric{
+      background-position: 100% 0;
+    }
+    &.fire{
+      background-position: 25% 33%;
+    }
+    &.water{
+      background-position: 63% 100%;
+    }
+    &.grass{
+      background-position: 100% 33%;
+    }
+    &.fighting{
+      background-position: 0 33%;
+    }
+  }
+  
+  
+  .row{
+    display: block;
+    min-height: 50px;
+  }
+  
+  
+  .instructions{
+    text-align: center;
+    padding: 20px 0;
+    
+    p{
+      font-size: 2em;
+    }
+  }
+  
+  
+  .characters{
+    display: flex;
+    justify-content: space-around;
+    transition: visibility 0.3s ease, opacity 0.3s ease, height 0.3s ease;
+    
+    &.hidden{
+      visibility: hidden;
+      opacity: 0;
+      height: 0;
+    }
+  }
+  .char-container{
+    width: 25%;
+    text-align: center;
+    padding: 25px 0;
+    cursor: pointer;
+    
+    img{
+      max-height: 100px;
+      margin-bottom: 13px;
+      transition: transform 0.3s ease, margin 0.3s ease;
+    }
+    h2{
+      text-transform: capitalize;
+      font-size: 1.5em;
+      font-weight: 600;
+      transition: font-size 0.3s ease;
+    }
+    
+    &:hover{
+      img{
+        transform: scale(1.3);
+        margin-bottom: 17px;
+      }
+      h2{
+        font-size: 1.2em;
+      }
+    }
+  }
+  
+  
+  .stadium{
+    background: #7DCD79;
+  
+    >section{
+      display: block;
+      box-sizing: border-box;
+      
+      .char{
+        height: 175px;
+        position: relative;
+        
+        > *{
+          position: absolute;
+          text-transform: capitalize;
+        }
+        
+        img{
+          height: 150px;
+        }
+        
+        .data{
+          background: #CCC;
+          width: 20vw;
+          padding: 15px 2%;
+          box-sizing: border-box;
+          top: 25px;
+          progress{
+            width: 100%;
+          }
+          p{
+            text-align: right;
+          }
+        }
+      }
+    }
+    
+    .enemy{
+      img{
+        right: 15vw;
+      }
+      .data{
+        left: 15vw;
+      }
+    }
+    
+    .hero{
+      img{
+        left: 15vw;
+      }
+      .data{
+        right: 15vw;
+      }
+    }
+  }
+  
+  
+  .attack-list{
+    display: flex;
+    flex-wrap: wrap;
+    background: #FFFAFA;
+    position: initial;
+    text-transform: capitalize;
+    
+    &.disabled{
+      opacity: 0.5;
+      position: relative;
+      z-index: -1;
+      cursor: initial;
+    }
+  
+    li{
+      width: 50%;
+      text-align: center;
+      padding: 25px 0;
+      box-sizing: border-box;
+      border: 1px solid #666;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      
+      &:hover{
+        background: #EEE;
+      }
+    }
+  }
+  
+  
+  
+  .modal-out{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(33,33,33,0.75);
+    z-index: 900;
+    
+    .modal-in{
+      position: fixed;
+      top: 15vh;
+      left: 0;
+      right: 0;
+      width: 50vw;
+      height: 70vh;
+      margin: 0 auto;
+      background: #FFFAFA;
+      
+      header {
+        position: relative;
+        min-height: 30px;
+        text-align: center;
+        padding: 10px 3%;
+        box-sizing: border-box;
+        h1 {
+          font-size: 2.2em;
+        }
+      }
+      .close{
+        cursor: pointer;
+        position: absolute;
+        top: 13px;
+        right: 13px;
+      }
+      
+      section{
+        box-sizing: border-box;
+        padding: 25px 3%;
+      }
+    }
+  }

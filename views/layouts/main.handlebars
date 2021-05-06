@@ -8,12 +8,13 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   {{!-- <link rel="stylesheet" type="text/css" href="/css/jass.css"> --}}
   <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" type="text/scss" href="/css/stadium.css">
 </head>
 
 <body>
   <nav>
     <a href="/">Home</a>
-    <a href="/dashboard">Dashboard</a>
+    <a href="/dashboard">Pokédex</a>
     {{#if loggedIn}}
     <button id="logout" class="btn-no-style">Logout</button>
     {{else}}
@@ -21,13 +22,13 @@
     {{/if}}
   </nav>
   <header>
-    <h1><img src="https://fontmeme.com/permalink/210504/11e21adbbf4cc1626f181a3f441c2837.png" alt="PokeFyteLogo" border="0"></h1>
+    <h1><img src="https://fontmeme.com/permalink/210504/11e21adbbf4cc1626f181a3f441c2837.png" alt="PokeFyteLogo" border="0"/></h1>
   </header>
   <main>
-    {{!-- <aside>
+    <aside>
         <h2>Enjoy this great adventure!</h2>
-    </aside> --}}
-    
+        <img src='https://veekun.com/dex/media/pokemon/global-link/64.png'/>
+    </aside>
     <div class="posts">
       {{{body}}}
     </div>
@@ -39,6 +40,8 @@
   {{/if}}
   
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="/js/script.js"></script>
 </body>
 
 </html>
