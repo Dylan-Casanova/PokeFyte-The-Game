@@ -3,6 +3,7 @@ const { default: axios } = require('axios');
 const { response } = require('express');
 const { Pokemon } = require('../models');
 const withAuth = require('../util/auth');
+
 //get all pokemons for home page
 router.get('/', async (req, res) => {
     try {
@@ -28,9 +29,7 @@ router.get('/', async (req, res) => {
       res.status(500).json(err);
     }
 });
-
-router.get('/dashboard', async (req, res) => {
-
+router.get('/dashboard2', async (req, res) => {
     try {
         const dbPokemonData = await Pokemon.findAll({
             attributes: [
