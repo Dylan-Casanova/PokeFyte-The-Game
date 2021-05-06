@@ -11,25 +11,25 @@ const userdata = [
   {
     "username": "Ian341",
     "email": "lernantino@gmail.com",
-    "password": "password12345",
+    "password": "password123456",
     // "pokemon_id": 5,
   },
   {
     "username": "Yi235",
     "email": "amiko2k20@aol.com",
-    "password": "password12345",
+    "password": "password1234567",
     // "pokemon_id": 7,
   },
   {
     "username": "Adam215",
     "email": "am2220@aol.com",
-    "password": "password12345",
+    "password": "password12345678",
     // "pokemon_id": 10,
   },
   {
     "username": "Dylan55",
     "email": "a454o2k20@aol.com",
-    "password": "password12345",
+    "password": "password1234",
     // "pokemon_id": 15,
   },
 
