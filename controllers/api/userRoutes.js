@@ -1,7 +1,6 @@
 const router = require('express').Router();
 const { User, Pokemon } = require('../../models');
 
-
 // router.post('/:id', async (req,res) => {
 //   try{
 //     const newPokemon = await Pokemon.create(req.body)
