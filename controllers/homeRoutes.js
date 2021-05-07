@@ -74,7 +74,7 @@ router.get('/dashboard', withAuth, async (req, res) => {
                 move1: item.data.moves[0].move.name,
                 move2: item.data.moves[1].move.name,
                 move3: item.data.moves[2].move.name,
-                move4: item.data.moves[3].move.name,
+                move4: item.data.moves[17].move.name,
                 type: item.data.types[0].type.name
             }
         })

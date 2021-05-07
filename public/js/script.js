@@ -87,10 +87,7 @@ const buildVars = async () => {
       console.log('api failed')
     }
     console.log(characters)
-
 }
-
-
 
 
 
@@ -142,6 +139,10 @@ function attackMultiplier(attacker, curAttack){
   if(gameData[defender].weakness.indexOf(gameData[attacker].type) >= 0){
     // weakness exists
     curAttack.hp *= 2;
+  }
+
+  if(attacker === 'enemy'){
+    curAttack.hp *=0.7;
   }
 
   if(gameData[defender].resistance.indexOf(gameData[attacker].type) >= 0){
@@ -218,7 +219,7 @@ async function resetGame(){
 
   for(var i in characters){
     // build the character list
-    $(".characters").append('<div class="char-container card" style="display:flex; flex-wrap:wrap; flex-direction: row;"><img src="'+characters[i].img.default+'" alt="'+characters[i].name+'"><h2>'+characters[i].name+'</h2><span class="type '+characters[i].type+'"></span></div>')
+    $(".characters").append('<div class="char-container card text-capitalize flex-column align-content-center" style="display:flex; flex-wrap:wrap; flex-direction: row;"><img src="'+characters[i].img.default+'" alt="'+characters[i].name+'"><h2>'+characters[i].name+'</h2><span class="type '+characters[i].type+'"></span></div>')
   }
   characterChoice();
 }
