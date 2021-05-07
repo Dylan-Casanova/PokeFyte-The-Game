@@ -73,11 +73,13 @@ router.get('/dashboard', withAuth, async (req, res) => {
                 attack: item.data.stats[1].base_stat,
                 move1: item.data.moves[0].move.name,
                 move2: item.data.moves[1].move.name,
+                move3: item.data.moves[2].move.name,
+                move4: item.data.moves[3].move.name,
                 type: item.data.types[0].type.name
             }
         })
 
-        console.log(pokemon)
+        // console.log(pokemon)
 
             res.render('cards',
             {pokemon});

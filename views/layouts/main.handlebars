@@ -6,10 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pokefyte</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  {{!-- <link rel="stylesheet" type="text/css" href="/css/jass.css"> --}}
-
-  <link rel="stylesheet" type="text/css" href="/css/stadium.css">
-    {{!-- <link rel="stylesheet" type="text/css" href="/css/style.css"> --}}
+  <link rel="stylesheet" type="text/css" href="/css/jass.css">
+  <link rel="stylesheet" type="text/scss" href="/css/stadium.css">
+   <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
 <body>
@@ -17,9 +16,9 @@
     <a href="/">Home</a>
     <a href="/dashboard">Pokédex</a>
     {{#if loggedIn}}
-    <button id="logout" class="btn-no-style">Logout</button>
+    <button id="logout" class="btn-dark">Logout</button>
     {{else}}
-    <a href="/login">Login</a>
+    <a id="login" href="/login">Login</a>
     {{/if}}
   </nav>
   <header>
@@ -30,7 +29,6 @@
   <main>
     <aside>
         <h2>Enjoy this great adventure!</h2>
-
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -58,6 +56,7 @@
     </div>
   </main>
   <footer>
+    <p class="text-center">Enjoy this open source project!</p>
   </footer>
   {{#if loggedIn}}
   <script src="/js/logout.js"></script>

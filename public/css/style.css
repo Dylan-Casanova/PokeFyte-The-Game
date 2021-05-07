@@ -8,6 +8,14 @@ body {
     background-color: #222224;
 }
 
+#login div {
+    column-gap: 50px;
+}
+
+footer p {
+    color: #f0f0f0;
+}
+
 header {
     border-bottom: 15px solid #ee1515;
     height: 200px;
@@ -38,6 +46,14 @@ main {
     flex-grow: 1;
 }
 
+#battlefield {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-direction: column;
+
+}
+
 aside {
     flex: 0;
     background-color: #f0f0f0;
@@ -52,9 +68,9 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: #f0f0f0;
     padding: 14px 20px;
-    text-decoration: none;
+    text-decoration: underline;
 }
   
 nav a:hover {
@@ -79,6 +95,10 @@ nav a:hover {
     font-size: 100%;
     transition: color 0.1s;
     margin-left: 16px;
+}
+
+.btn-danger {
+    border-radius: 30px;
 }
   
 img {
@@ -144,15 +164,14 @@ img {
   
 .login-card {
     margin: 0 0 20px 0;
+    border-spacing: 5px;
     flex: 0 0 50%;
     max-width: 50%;
     padding: 5px;
-    border: 3px solid black;
-    border-radius: 20px;
+    border: 5px solid black;
+    border-radius: 30px;
     border-style: double;
-    border-width: thick;
-    background-color: #2b2b2b;
-    color: #707070;
+    color: black;
 }
   
 .card header {
@@ -206,3 +225,209 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#loginform {
+    background-image:url(https://i.pinimg.com/originals/2c/dd/4d/2cdd4def3fcd3935b0eafe7ca4269cc9.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* below */
+
+.instructions {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .instructions p {
+    font-size: 2em;
+  }
+  
+  .characters {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-transition: visibility 0.3s ease, opacity 0.3s ease, height 0.3s ease;
+    transition: visibility 0.3s ease, opacity 0.3s ease, height 0.3s ease;
+  }
+  
+  .characters.hidden {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+  }
+  
+  .char-container {
+    width: 25%;
+    text-align: center;
+    padding: 25px 0;
+    cursor: pointer;
+  }
+  
+  .char-container img {
+    max-height: 100px;
+    margin-bottom: 13px;
+    -webkit-transition: margin 0.3s ease, -webkit-transform 0.3s ease;
+    transition: margin 0.3s ease, -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease, margin 0.3s ease;
+    transition: transform 0.3s ease, margin 0.3s ease, -webkit-transform 0.3s ease;
+  }
+  
+  .char-container h2 {
+    text-transform: capitalize;
+    font-size: 1.5em;
+    font-weight: 600;
+    -webkit-transition: font-size 0.3s ease;
+    transition: font-size 0.3s ease;
+  }
+  
+  .char-container:hover img {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    margin-bottom: 17px;
+  }
+  
+  .char-container:hover h2 {
+    font-size: 1.2em;
+  }
+  
+  .stadium {
+    background: #7DCD79;
+  }
+  
+  .stadium > section {
+    display: block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  .stadium > section .char {
+    height: 175px;
+    position: relative;
+  }
+  
+  .stadium > section .char > * {
+    position: absolute;
+    text-transform: capitalize;
+  }
+  
+  .stadium > section .char img {
+    height: 150px;
+  }
+  
+  .stadium > section .char .data {
+    background: #CCC;
+    width: 20vw;
+    padding: 15px 2%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    top: 25px;
+  }
+  
+  .stadium > section .char .data progress {
+    width: 100%;
+  }
+  
+  .stadium > section .char .data p {
+    text-align: right;
+  }
+  
+  .stadium .enemy img {
+    right: 15vw;
+  }
+  
+  .stadium .enemy .data {
+    left: 15vw;
+  }
+  
+  .stadium .hero img {
+    left: 15vw;
+  }
+  
+  .stadium .hero .data {
+    right: 15vw;
+  }
+  
+  .attack-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background: #FFFAFA;
+    position: initial;
+    text-transform: capitalize;
+  }
+  
+  .attack-list.disabled {
+    opacity: 0.5;
+    position: relative;
+    z-index: -1;
+    cursor: initial;
+  }
+  
+  .attack-list li {
+    width: 50%;
+    text-align: center;
+    padding: 25px 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 1px solid #666;
+    cursor: pointer;
+    -webkit-transition: background 0.3s ease;
+    transition: background 0.3s ease;
+  }
+  
+  .attack-list li:hover {
+    background: #EEE;
+  }
+  
+  .modal-out {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(33, 33, 33, 0.75);
+    z-index: 900;
+  }
+  
+  .modal-out .modal-in {
+    position: fixed;
+    top: 15vh;
+    left: 0;
+    right: 0;
+    width: 50vw;
+    height: 70vh;
+    margin: 0 auto;
+    background: #FFFAFA;
+  }
+  
+  .modal-out .modal-in header {
+    position: relative;
+    min-height: 30px;
+    text-align: center;
+    padding: 10px 3%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  .modal-out .modal-in header h1 {
+    font-size: 2.2em;
+  }
+  
+  .modal-out .modal-in .close {
+    cursor: pointer;
+    position: absolute;
+    top: 13px;
+    right: 13px;
+  }
+  
+  .modal-out .modal-in section {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 25px 3%;
+  }
