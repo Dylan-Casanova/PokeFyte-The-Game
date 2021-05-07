@@ -4,8 +4,7 @@
 </p>
 
 <p align='center'>   <strong>Be sure to rename the .env file and add your MySQL Information to the .env file. </strong></p>
-<p align='center'>   This application is still being worked on.</p>
-
+<p align='center'> Click <a href="https://pokyfyte.herokuapp.com/">here</a> to view the live application.</p>
 <br>
 
 <h1 align='center'><img src='https://veekun.com/dex/media/pokemon/global-link/8.png' height=40px/> Description <img src='https://veekun.com/dex/media/pokemon/global-link/123.png' height=40px/></h1>
