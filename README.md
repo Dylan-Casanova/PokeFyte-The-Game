@@ -10,10 +10,10 @@
 
 <h1 align='center'><img src='https://veekun.com/dex/media/pokemon/global-link/8.png' height=40px/> Description <img src='https://veekun.com/dex/media/pokemon/global-link/123.png' height=40px/></h1>
 
-<p align='center'>Hello! This is PokéFyte - an application that allows users to engage in battle with Pokémon! 
+<p align='center'>Hello! This is PokéFyte - an application that allows users to engage in battle with Pokémon. Using the base code from <a href="https://codepen.io/hollyos/pen/QNRXYK">Holly Springsteen</a>'s open source game, we've also added a few improvements of our own!
 <br>
 <p align='center'>Users are able to sign up and login, as well as view the Pokédex!
-<p align='center'>While in development, the amount of Pokémon that display in the Pokédex will vary.
+<p align='center'>
 </p>
 <p align='center'>The Pokédex will provide information such as Pokémon names, HP, Attack Stat, Type and Moves!
 
